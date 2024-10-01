@@ -1,0 +1,52 @@
+import { EOfferType, TOfferCard } from '../types';
+
+export const MOCK_OFFERS: TOfferCard[] = [
+  {
+    id: 1,
+    mark: 'Premium',
+    imgUrl: 'img/apartment-01.jpg',
+    price: 120,
+    rating: 4,
+    inBookmarks: false,
+    title: 'Beautiful luxurious apartment at great location',
+    type: EOfferType.Apartment,
+  },
+  {
+    id: 2,
+    mark: 'Premium',
+    imgUrl: 'img/room.jpg',
+    price: 80,
+    rating: 4,
+    inBookmarks: true,
+    title: 'Wood and stone place',
+    type: EOfferType.Room,
+  },
+  {
+    id: 3,
+    imgUrl: 'img/apartment-02.jpg',
+    price: 132,
+    rating: 4,
+    inBookmarks: false,
+    title: 'Canal View Prinsengracht',
+    type: EOfferType.Apartment,
+  },
+  {
+    id: 4,
+    mark: 'Premium',
+    imgUrl: 'img/apartment-03.jpg',
+    price: 180,
+    rating: 5,
+    inBookmarks: false,
+    title: 'Nice, cozy, warm big bed apartment',
+    type: EOfferType.Apartment,
+  },
+  {
+    id: 5,
+    imgUrl: 'img/room.jpg',
+    price: 80,
+    rating: 4,
+    inBookmarks: true,
+    title: 'Wood and stone place',
+    type: EOfferType.Room,
+  },
+];
