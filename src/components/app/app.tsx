@@ -1,6 +1,6 @@
 import React from 'react';
+import { Main } from '@pages/main/main';
 import { TCity, TOfferCard } from '../../types';
-import { Main } from '../../pages/main/main.tsx';
 
 interface IAppProps {
   city: TCity;
