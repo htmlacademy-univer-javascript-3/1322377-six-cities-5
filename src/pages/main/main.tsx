@@ -1,7 +1,7 @@
 import React from 'react';
-import { TCity, TOfferCard } from '../../types';
+import { CityCard } from '@components/city-card/city-card';
 import { getPageTitle } from './helpers';
-import { CityCard } from '../../components/city-card/city-card.tsx';
+import { TCity, TOfferCard } from '../../types';
 
 interface IMainProps {
   offers: TOfferCard[];
@@ -127,7 +127,7 @@ export const Main: React.FC<IMainProps> = ({
               </form>
               <div className="cities__places-list places__list tabs__content">
                 {offers.map((c) => (
-                  <CityCard key={c.id} city={c}></CityCard>
+                  <CityCard key={c.id} city={c} />
                 ))}
               </div>
             </section>

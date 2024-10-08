@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { TOfferCard } from '../../types';
 
 const FILLED_BOOKMARK_BUTTON_CLASS = 'place-card__bookmark-button--active';
@@ -23,7 +24,7 @@ export const CityCard: React.FC<ICityCardProps> = ({ city }) => {
         </div>
       )}
       <div className="cities__image-wrapper place-card__image-wrapper">
-        <a href="#">
+        <Link to={`/offer/${city.id}`}>
           <img
             className="place-card__image"
             src={city.imgUrl}
@@ -31,7 +32,7 @@ export const CityCard: React.FC<ICityCardProps> = ({ city }) => {
             height="200"
             alt="Place image"
           />
-        </a>
+        </Link>
       </div>
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
@@ -53,7 +54,7 @@ export const CityCard: React.FC<ICityCardProps> = ({ city }) => {
           </div>
         </div>
         <h2 className="place-card__name">
-          <a href="#">{city.title}</a>
+          <Link to={`/offer/${city.id}`}>{city.title}</Link>
         </h2>
         <p className="place-card__type">{city.type}</p>
       </div>
