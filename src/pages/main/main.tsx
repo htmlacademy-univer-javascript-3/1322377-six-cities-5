@@ -127,7 +127,7 @@ export const Main: React.FC<IMainProps> = ({
               </form>
               <div className="cities__places-list places__list tabs__content">
                 {offers.map((c) => (
-                  <CityCard key={c.id} city={c}></CityCard>
+                  <CityCard key={c.id} city={c} />
                 ))}
               </div>
             </section>
